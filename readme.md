@@ -1,7 +1,6 @@
 ## limpide
-<center>
 ![limpide screenshot](https://github.com/shooteram/limpide/blob/master/demo.png)
-</center>
+
 This theme is a modified version of the [_miloshadzic_](https://github.com/robbyrussell/oh-my-zsh/wiki/themes#miloshadzic) theme.  
 Rather than using only the name of the current directory, I'm merging with it the name of the parent
     directory.  
