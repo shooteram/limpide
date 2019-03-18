@@ -8,7 +8,10 @@ $(git_prompt_info)$(enhance_prompt)%{$fg[cyan]%}>%{$reset_color%} '
 
 enhance_prompt() {
     if is_redmine $1; then
-        echo "$(redmine subject | xargs -0) ($(redmine fixed_version.name)) \
+        subject="$(redmine subject | xargs -0)"
+        version=$(echo "($(redmine fixed_version.name))")
+
+        echo "%$(( $COLUMNS - 60 ))>...>$subject%<< $version \
 %{$fg[cyan]%}$(redmine spent_hours)h%{$reset_color%} \n\x"
     fi
 }
