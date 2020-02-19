@@ -6,7 +6,7 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[yellow]%}o%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 
-PROMPT='%$(( $COLUMNS - 20 ))>...>%{$fg[cyan]%}%1~%{$reset_color%} %{$fg[red]%}|%{$reset_color%} \
+PROMPT='%$(( $COLUMNS - 20 ))>...>%{$fg[cyan]%}%2~%{$reset_color%} %{$fg[red]%}|%{$reset_color%} \
 $(git_prompt_info)%<<$(enhance_prompt)%{$fg[cyan]%}>%{$reset_color%} '
 
 enhance_prompt() {
